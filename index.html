@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>VELOCITY MOTORS</title>
+    <link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <!-- ===================================
+     VELOCITY MOTORS
+==================================== -->
+
+<header>
+    <nav class="navbar">
+
+        <a href="#inicio" class="logo">
+            VELOCITY <span>MOTORS</span>
+        </a>
+
+        <!-- MENU MOBILE -->
+
+        <button
+            class="menu-toggle"
+            id="menuToggle"
+            type="button"
+            aria-label="Abrir menu"
+            aria-expanded="false"
+            aria-controls="navLinks"
+        >
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- NAVEGAÇÃO -->
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#estoque">Estoque</a></li>
+            <li><a href="#empresa">Empresa</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+
+    </nav>
+</header>
+
+
+<!-- ===================================
+     PÁGINA INICIAL
+==================================== -->
+
+<section class="hero" id="inicio">
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            VELOCITY MOTORS • PERFORMANCE & EXCLUSIVIDADE
+        </p>
+
+        <h1>
+            O extraordinário<br>
+            está ao seu alcance.
+        </h1>
+
+        <p>
+            Uma seleção exclusiva de veículos esportivos
+            para quem nasceu para ir além.
+        </p>
+
+        <a href="#estoque" class="btn">
+            EXPLORAR ESTOQUE ↗
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ===================================
+     ESTOQUE DE VEÍCULOS
+==================================== -->
+
+<section id="estoque">
+
+    <h2 class="titulo">Veículos em Destaque</h2>
+
+    <!-- BARRA DE PESQUISA -->
+
+    <div class="estoque-search">
+
+        <span class="search-icon" aria-hidden="true">⌕</span>
+
+        <input
+            type="search"
+            id="buscarCarro"
+            placeholder="Pesquise por marca, modelo, motor ou preço..."
+            aria-label="Pesquisar veículos"
+            autocomplete="off"
+        >
+
+        <button
+            type="button"
+            id="limparBusca"
+            aria-label="Limpar pesquisa"
+        >
+            &times;
+        </button>
+
+    </div>
+
+    <p
+        class="resultado-busca"
+        id="resultadoBusca"
+        aria-live="polite"
+    >
+        Exibindo todos os veículos.
+    </p>
+
+
+    <!-- CARDS DOS VEÍCULOS: 3 FOTOS POR CARRO -->
+
+    <div class="cards">
+
+
+        <!-- ===================================
+             1. CHEVROLET CAMARO EXORCIST
+             COR: VERMELHO
+        ==================================== -->
+
+        <div class="card">
+
+            <img
+                src="https://st1.uvnimg.com/33/58/acbd950d447c88c2bf8215481fea/exorcist-hennessey-8-1.jpg"
+                alt="Chevrolet Camaro Exorcist vermelho - foto principal"
+                loading="lazy"
+            >
+
+            <div hidden>
+
+                <img
+                    src="https://st1.uvnimg.com/25/50/61da4183447d859e3477ffe22e03/exorcist-hennessey-17-1.jpg"
+                    alt="Chevrolet Camaro Exorcist vermelho - segunda foto"
+                >
+
+                <img
+                    src="https://st1.uvnimg.com/66/b2/90d689124cdc82406e1b4a0fa924/exorcist-hennessey-16-1.jpg"
+                    alt="Chevrolet Camaro Exorcist vermelho - terceira foto"
+                >
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>Chevrolet Camaro Exorcist</h3>
+
+                <p>Motor V8 Supercharged • 1.000 cv</p>
+
+                <div class="preco">R$ 3.490.000</div>
+
+                <button
+                    class="btn visualizar-carro"
+                    data-carro="0"
+                    type="button"
+                >
+                    VER DETALHES ↗
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===================================
+             2. MERCEDES-AMG GT R
+             COR: VERDE
+        ==================================== -->
+
+        <div class="card">
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG_GT-R_%28C190%29_front.jpg"
+                alt="Mercedes-AMG GT R verde - foto principal"
+                loading="lazy"
+            >
+
+            <div hidden>
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Mercedes-AMG_GT-R_%28C190%29_rear.jpg"
+                    alt="Mercedes-AMG GT R verde - segunda foto"
+                >
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/The_frontview_of_Mercedes-AMG_GT_R_%28C190%29.jpg"
+                    alt="Mercedes-AMG GT R verde - terceira foto"
+                >
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>Mercedes-AMG GT R</h3>
+
+                <p>Motor V8 Biturbo • 585 cv</p>
+
+                <div class="preco">R$ 2.490.000</div>
+
+                <button
+                    class="btn visualizar-carro"
+                    data-carro="1"
+                    type="button"
+                >
+                    VER DETALHES ↗
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===================================
+             3. AUDI R8 V10 PERFORMANCE
+             COR: VERMELHO TANGO
+        ==================================== -->
+
+        <div class="card">
+
+            <img
+                src="https://uploads.audi.com/system/production/media/107033/images/cec18ad36f8c5c32332143c9b594974aa0c59c5c/A218765_web_2880.jpg"
+                alt="Audi R8 V10 Performance vermelho Tango - foto principal"
+                loading="lazy"
+            >
+
+            <div hidden>
+
+                <img
+                    src="https://uploads.audi.com/system/production/media/107025/images/ff07e2d9babda39ae1420f71d0e8503f6f3ecc67/A218757_web_2880.jpg"
+                    alt="Audi R8 V10 Performance vermelho Tango - segunda foto"
+                >
+
+                <img
+                    src="https://uploads.audi.com/system/production/media/107035/images/a418ab19b2024f3d0c4fabcf893a0c8332fd0824/A218767_web_2880.jpg"
+                    alt="Audi R8 V10 Performance vermelho Tango - terceira foto"
+                >
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>Audi R8 V10 Performance</h3>
+
+                <p>Motor V10 Aspirado • 620 cv</p>
+
+                <div class="preco">R$ 1.690.000</div>
+
+                <button
+                    class="btn visualizar-carro"
+                    data-carro="2"
+                    type="button"
+                >
+                    VER DETALHES ↗
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===================================
+             4. PORSCHE 911 TURBO S
+        ==================================== -->
+
+        <div class="card">
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/2021_Porsche_911_Turbo_S_1.jpg"
+                alt="Porsche 911 Turbo S - foto principal"
+                loading="lazy"
+            >
+
+            <div hidden>
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/2021_Porsche_911_Turbo_S_2.jpg"
+                    alt="Porsche 911 Turbo S - segunda foto"
+                >
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/2021_Porsche_911_Turbo_S_S-A.jpg"
+                    alt="Porsche 911 Turbo S - terceira foto"
+                >
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>Porsche 911 Turbo S</h3>
+
+                <p>Motor Boxer 6 Cilindros Biturbo • 650 cv</p>
+
+                <div class="preco">R$ 2.490.000</div>
+
+                <button
+                    class="btn visualizar-carro"
+                    data-carro="3"
+                    type="button"
+                >
+                    VER DETALHES ↗
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===================================
+             5. LAMBORGHINI HURACÁN EVO
+             COR: AMARELO GIALLO INTI
+        ==================================== -->
+
+        <div class="card">
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/2020-giallo-inti-lamborghini-huracan-evo-coupe%20504901152%20o.jpg"
+                alt="Lamborghini Huracán EVO amarelo Giallo Inti - foto principal"
+                loading="lazy"
+            >
+
+            <div hidden>
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/2020-giallo-inti-lamborghini-huracan-evo-coupe-rwd%2050490830952%20o.jpg"
+                    alt="Lamborghini Huracán EVO amarelo Giallo Inti - segunda foto"
+                >
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Lamborghini_Huracan_EVO_coup%C3%A8_in_Giallo_Inti.jpg"
+                    alt="Lamborghini Huracán EVO amarelo Giallo Inti - terceira foto"
+                >
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>Lamborghini Huracán EVO</h3>
+
+                <p>Motor V10 Aspirado • 640 cv</p>
+
+                <div class="preco">R$ 3.490.000</div>
+
+                <button
+                    class="btn visualizar-carro"
+                    data-carro="4"
+                    type="button"
+                >
+                    VER DETALHES ↗
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ===================================
+             6. FERRARI F8 TRIBUTO
+             COR: VERMELHO
+        ==================================== -->
+
+        <div class="card">
+
+            <img
+                src="https://commons.wikimedia.org/wiki/Special:FilePath/Red_Ferrari_F8_Tributo_in_Foch_parking%2C_Paris_1.jpg"
+                alt="Ferrari F8 Tributo vermelho - foto principal"
+                loading="lazy"
+            >
+
+            <div hidden>
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Red_Ferrari_F8_Tributo_in_Foch_parking%2C_Paris_2.jpg"
+                    alt="Ferrari F8 Tributo vermelho - segunda foto"
+                >
+
+                <img
+                    src="https://commons.wikimedia.org/wiki/Special:FilePath/Red_Ferrari_F8_Tributo.jpg"
+                    alt="Ferrari F8 Tributo vermelho - terceira foto"
+                >
+
+            </div>
+
+            <div class="card-content">
+
+                <h3>Ferrari F8 Tributo</h3>
+
+                <p>Motor V8 Biturbo • 720 cv</p>
+
+                <div class="preco">R$ 4.290.000</div>
+
+                <button
+                    class="btn visualizar-carro"
+                    data-carro="5"
+                    type="button"
+                >
+                    VER DETALHES ↗
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================
+     GALERIA DOS VEÍCULOS
+==================================== -->
+
+<div
+    class="gallery-modal"
+    id="galleryModal"
+    aria-hidden="true"
+>
+
+    <div class="gallery-container">
+
+        <button
+            class="gallery-close"
+            id="galleryClose"
+            aria-label="Fechar galeria"
+            type="button"
+        >
+            &times;
+        </button>
+
+        <div
+            class="gallery-image-area"
+            id="galleryImageArea"
+        >
+
+            <button
+                class="gallery-arrow prev"
+                id="galleryPrev"
+                aria-label="Imagem anterior"
+                type="button"
+            >
+                &#10094;
+            </button>
+
+            <img
+                id="galleryImage"
+                src=""
+                alt="Imagem do veículo"
+            >
+
+            <button
+                class="gallery-arrow next"
+                id="galleryNext"
+                aria-label="Próxima imagem"
+                type="button"
+            >
+                &#10095;
+            </button>
+
+        </div>
+
+
+        <!-- INFORMAÇÕES DO VEÍCULO -->
+
+        <div class="informacoes">
+
+            <span class="eyebrow">
+                VELOCITY MOTORS • FICHA TÉCNICA
+            </span>
+
+            <h3 id="nomeCarro">
+                Chevrolet Camaro Exorcist
+            </h3>
+
+            <p id="motorCarro">Motor V8 Supercharged</p>
+
+            <p id="potenciaCarro">Potência: 1.000 cv</p>
+
+            <p id="aceleracaoCarro">0–100 km/h: 2,3 s</p>
+
+            <p id="velocidadeCarro">
+                Velocidade Máxima: 350 km/h
+            </p>
+
+            <h2 id="precoCarro">R$ 3.490.000</h2>
+
+            <div class="acoes">
+
+                <a
+                    href="https://wa.me/5527998636436"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn"
+                    id="comprarCarro"
+                >
+                    COMPRAR PELO WHATSAPP ↗
+                </a>
+
+                <button
+                    class="btn fechar-btn"
+                    id="galleryCloseBottom"
+                    type="button"
+                >
+                    FECHAR
+                </button>
+
+            </div>
+
+            <p
+                id="contadorImagem"
+                class="contador-imagem"
+            ></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!-- ===================================
+     SOBRE A EMPRESA
+==================================== -->
+
+<section id="empresa">
+
+    <h2 class="titulo">Sobre a Velocity Motors</h2>
+
+    <div class="empresa-container">
+
+        <p>
+            A <strong>Velocity Motors</strong> é referência no mercado
+            de veículos esportivos e de luxo.
+        </p>
+
+        <p>
+            Trabalhamos com automóveis exclusivos das principais
+            marcas mundiais, oferecendo procedência garantida,
+            atendimento personalizado e uma experiência diferenciada.
+        </p>
+
+        <p>
+            Nossa missão é conectar nossos clientes aos melhores
+            esportivos do mercado, com transparência, segurança
+            e excelência em cada negociação.
+        </p>
+
+        <a href="#contato" class="btn">
+            FALE CONOSCO ↗
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ===================================
+     CONTATO
+==================================== -->
+
+<footer id="contato">
+
+    <h2 class="titulo">Entre em Contato</h2>
+
+    <p class="subtitulo">
+        Estamos prontos para encontrar o esportivo perfeito para você.
+    </p>
+
+
+    <!-- INFORMAÇÕES DE CONTATO -->
+
+    <div class="contato-grid">
+
+        <div class="info-card">
+
+            <h3>📍 Endereço</h3>
+
+            <p>Av. Premium, 1000</p>
+            <p>Vitória - ES</p>
+
+            <a
+                href="https://www.google.com/maps/search/?api=1&query=Av.+Premium,+1000,+Vit%C3%B3ria,+ES"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Ver localização ↗
+            </a>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <h3>📞 Telefone</h3>
+
+            <p>(27) 99863-6436</p>
+
+            <a
+                href="https://wa.me/5527998636436"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Conversar pelo WhatsApp ↗
+            </a>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <h3>📧 E-mail</h3>
+
+            <p>contato@velocitymotors.com.br</p>
+
+            <a href="mailto:contato@velocitymotors.com.br">
+                Enviar e-mail ↗
+            </a>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <h3>🕒 Atendimento</h3>
+
+            <p>Segunda a sexta</p>
+            <p>08:00 às 18:00</p>
+
+        </div>
+
+    </div>
+
+
+    <!-- FORMULÁRIO -->
+
+    <form class="contato-form" id="contatoForm">
+
+        <h3>Envie sua mensagem</h3>
+
+        <input
+            type="text"
+            id="nome"
+            placeholder="Seu nome"
+            required
+        >
+
+        <input
+            type="email"
+            id="email"
+            placeholder="Seu e-mail"
+            required
+        >
+
+        <input
+            type="tel"
+            id="telefone"
+            placeholder="Seu telefone"
+            required
+        >
+
+        <textarea
+            id="mensagem"
+            placeholder="Como podemos ajudar?"
+            required
+        ></textarea>
+
+        <button type="submit" class="btn">
+            ENVIAR PELO WHATSAPP ↗
+        </button>
+
+    </form>
+
+
+    <!-- REDES SOCIAIS -->
+
+    <div class="redes">
+
+        <a
+            href="https://www.instagram.com/velocity.motors.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social instagram"
+        >
+            📷 Instagram ↗
+        </a>
+
+        <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social facebook"
+        >
+            📘 Facebook ↗
+        </a>
+
+        <a
+            href="https://wa.me/5527998636436"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="social whatsapp"
+        >
+            💬 WhatsApp ↗
+        </a>
+
+        <a
+            href="mailto:contato@velocitymotors.com.br"
+            class="social email"
+        >
+            📧 E-mail ↗
+        </a>
+
+    </div>
+
+</footer>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>
